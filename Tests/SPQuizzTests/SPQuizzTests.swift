@@ -1,5 +1,5 @@
 import XCTest
-@testable import SPQuizz
+@testable import SPQuizzPackage
 
 final class SPQuizzTests: XCTestCase {
     func testExample() throws {
