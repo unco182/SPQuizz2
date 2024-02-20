@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "SPQuizz",
+    name: "SPQuizz2",
     platforms: [
         .iOS(.v14),
     ],
