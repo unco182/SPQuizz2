@@ -4,23 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "SPQuizz2",
+    name: "SPQuizzPackage",
     platforms: [
         .iOS(.v14),
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "SPQuizz2",
-            targets: ["SPQuizz2"]),
+            name: "SPQuizzLib",
+            targets: ["SPQuizzPackage"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "SPQuizz2"),
+            name: "SPQuizzTarget"),
         .testTarget(
-            name: "SPQuizz2Tests",
-            dependencies: ["SPQuizz2"]),
+            name: "SPQuizz2TestTarget",
+            dependencies: ["SPQuizzTarget"]),
     ]
 )
