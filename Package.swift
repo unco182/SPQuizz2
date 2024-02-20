@@ -11,16 +11,16 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "SPQuizz",
-            targets: ["SPQuizz"]),
+            name: "SPQuizz2",
+            targets: ["SPQuizz2"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "SPQuizz"),
+            name: "SPQuizz2"),
         .testTarget(
-            name: "SPQuizzTests",
-            dependencies: ["SPQuizz"]),
+            name: "SPQuizz2Tests",
+            dependencies: ["SPQuizz2"]),
     ]
 )
