@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "YOLO",
+    platforms: [
+       .iOS(.v14) // Spécifie que le package est compatible avec iOS 14 et versions ultérieures
+    ],
     products: [
         // Définissez les produits que votre package va fournir.
         .library(
